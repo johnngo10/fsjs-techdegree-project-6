@@ -8,13 +8,13 @@
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-1/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-1",
       "image_urls": [
-        "images/project_1_main.png",
-        "images/project_1_landscape.jpg"
+        "/static/images/project_1_main.png",
+        "/static/images/project_1_landscape.jpg"
       ]
     },
     {
       "id": "1",
-      "project_name": "Student Directory",
+      "project_name": "List Pagination and Filtering",
       "description": "A list of randomly generated students",
       "technologies": "HTML, CSS, JavaScript",
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-2/",
@@ -23,7 +23,7 @@
     },
     {
       "id": "2",
-      "project_name": "Conference Sign Up Form",
+      "project_name": "Interactive Conference Sign Up Form",
       "description": "A sign up form with validation functionality",
       "technologies": "HTML, CSS, JavaScript",
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-3/",

@@ -1,11 +1,15 @@
 // Import express and set up app
 const express = require("express");
+const path = require("path");
+
+// Init app
 const app = express();
 
 // require the data file
-const data = require("./data/data.json").projects;
+const { projects } = require("./data/data.json");
 
 // View Engine Setup
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
 // Add static middleware
@@ -13,17 +17,17 @@ app.use("/static", express.static("public"));
 
 // Import Routes
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { projects });
 });
 
 app.get("/about", (req, res) => {
   res.render("about");
 });
 
-app.get("/projects/:id", (req, res) => {
+app.get("/project/:id", (req, res) => {
   res.render("project", {
-    projectId: data[req.params.id].id,
-    projectName: data[req.params.id].project_name
+    projectId: projects[req.params.id].id,
+    projectName: projects[req.params.id].project_name
   });
 });
 
