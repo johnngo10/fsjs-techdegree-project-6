@@ -27,7 +27,12 @@ app.get("/about", (req, res) => {
 app.get("/project/:id", (req, res) => {
   res.render("project", {
     projectId: projects[req.params.id].id,
-    projectName: projects[req.params.id].project_name
+    projectName: projects[req.params.id].project_name,
+    projectDescription: projects[req.params.id].description,
+    projectTech: projects[req.params.id].technologies,
+    projectLive: projects[req.params.id].live_link,
+    projectGit: projects[req.params.id].github_link,
+    projectImg: projects[req.params.id].image_urls
   });
 });
 

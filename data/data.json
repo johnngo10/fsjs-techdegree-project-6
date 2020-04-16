@@ -4,7 +4,7 @@
       "id": "0",
       "project_name": "Quote Generator",
       "description": "Generates random quotes from the hit tv show 'the office'.",
-      "technologies": "HTML, CSS, JavaScript",
+      "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-1/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-1",
       "image_urls": [
@@ -16,7 +16,7 @@
       "id": "1",
       "project_name": "List Pagination and Filtering",
       "description": "A list of randomly generated students",
-      "technologies": "HTML, CSS, JavaScript",
+      "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-2/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-2",
       "image_urls": [""]
@@ -25,7 +25,7 @@
       "id": "2",
       "project_name": "Interactive Conference Sign Up Form",
       "description": "A sign up form with validation functionality",
-      "technologies": "HTML, CSS, JavaScript",
+      "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-3/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-3",
       "image_urls": [""]
@@ -34,7 +34,7 @@
       "id": "3",
       "project_name": "Phrase Hunter",
       "description": "A phrase guessing game where players have five chances to guess the correct letters within a phrase",
-      "technologies": "HTML, CSS, JavaScript",
+      "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-4/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-4",
       "image_urls": [""]
@@ -43,7 +43,7 @@
       "id": "4",
       "project_name": "Awesome Startup Employee Directory",
       "description": "A directory with randomly generated employees using fetch API, search functionality and modal",
-      "technologies": "HTML, CSS, JavaScript",
+      "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-5/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-5",
       "image_urls": [""]
