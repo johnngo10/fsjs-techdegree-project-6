@@ -37,21 +37,24 @@ app.get("/project/:id", (req, res) => {
 });
 
 // Error handles
-app.use((req, res, next) => {
-  const err = new Error("oh no!");
-  err.status = 500;
-  next(err);
-});
 
 app.use((req, res, next) => {
   // Log statement to indicate that this function is running
   console.log("Handling 404 error");
 
-  const err = new Error(
-    "Oops, page not found. Looks like that route does not exist."
-  );
+  // Create new error to handle non-existent route
+  const err = new Error("err");
   err.status = 404;
+  err.message = "Oops, page not found. Looks like that route does not exist.";
+
+  // Pass error to global error handler below
   next(err);
+});
+
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  res.status(err.status);
+  res.render("error");
 });
 
 // Turn on Express server

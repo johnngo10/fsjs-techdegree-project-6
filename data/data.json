@@ -19,7 +19,7 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-2/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-2",
-      "image_urls": [""]
+      "image_urls": ["/static/images/project_2.png"]
     },
     {
       "id": "2",
@@ -28,7 +28,7 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-3/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-3",
-      "image_urls": [""]
+      "image_urls": ["/static/images/project_3.png"]
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-4/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-4",
-      "image_urls": [""]
+      "image_urls": ["/static/images/project_4.png"]
     },
     {
       "id": "4",
@@ -46,7 +46,7 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://xuanngo.com/fsjs-techdegree-project-5/",
       "github_link": "https://github.com/xuanngo10/fsjs-techdegree-project-5",
-      "image_urls": [""]
+      "image_urls": ["/static/images/project_5.png"]
     }
   ]
 }
