@@ -5,9 +5,6 @@ const path = require("path");
 // Init app
 const app = express();
 
-// require the data file
-const { projects } = require("./data/data.json");
-
 // View Engine Setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
@@ -16,28 +13,11 @@ app.set("view engine", "pug");
 app.use("/static", express.static("public"));
 
 // Import Routes
-app.get("/", (req, res) => {
-  res.render("index", { projects });
-});
+const indexRoutes = require("./routes");
 
-app.get("/about", (req, res) => {
-  res.render("about");
-});
-
-app.get("/project/:id", (req, res) => {
-  res.render("project", {
-    projectId: projects[req.params.id].id,
-    projectName: projects[req.params.id].project_name,
-    projectDescription: projects[req.params.id].description,
-    projectTech: projects[req.params.id].technologies,
-    projectLive: projects[req.params.id].live_link,
-    projectGit: projects[req.params.id].github_link,
-    projectImg: projects[req.params.id].image_urls
-  });
-});
+app.use(indexRoutes);
 
 // Error handles
-
 app.use((req, res, next) => {
   // Log statement to indicate that this function is running
   console.log("Handling 404 error");
@@ -51,6 +31,7 @@ app.use((req, res, next) => {
   next(err);
 });
 
+// Render error template
 app.use((err, req, res, next) => {
   res.locals.error = err;
   res.status(err.status);
